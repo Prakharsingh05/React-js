@@ -5,3 +5,9 @@
 //Focus on UI
 
 //rich ecosystem 
+
+// created and mainatined by facebook
+
+//  component based architecture
+
+// react is declarative
