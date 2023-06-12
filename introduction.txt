@@ -8,6 +8,8 @@
 
 // created and mainatined by facebook
 
-//  component based architecture
+//  component based architecture for reusiblilty 
 
 // react is declarative
+
+// diffing algo - compare its two virtual dom for updated node
