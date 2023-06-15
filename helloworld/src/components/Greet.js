@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Greet = () => <h1>Hello Prakhar - using functional component</h1>
+const Greet = (props) => <h1>Hello {props.name} - using functional component</h1>
 
 
 export  default Greet;
