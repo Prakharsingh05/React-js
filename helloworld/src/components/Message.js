@@ -6,7 +6,15 @@ import React, { Component } from 'react'
     super()
     this.state = {
       message : "Welcome visitor"
+     // message2 : "thankyou for subscribing"
+
     }
+  }
+
+  changeMessage(){
+    this.setState({
+      message: "Thank you for subscribing   "
+    })
   }
   render() {
     return (
@@ -15,7 +23,7 @@ import React, { Component } from 'react'
     <h1>
        {this.state.message}
     </h1>
-    <button>Subscribe</button>
+    <button onClick = {()=> this.changeMessage()}>Subscribe</button>
     </div>
 
 
