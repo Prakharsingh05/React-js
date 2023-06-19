@@ -9,11 +9,13 @@ import FunctionClick from './components/FunctionClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreetings from './components/UserGreetings';
+import Counter1 from './components/Counter1';
 
 class App extends Component {
   render(){
   return (
     <div className="App">
+      <Counter1></Counter1>
       <UserGreetings/>
       <ParentComponent/>
       <EventBind></EventBind>

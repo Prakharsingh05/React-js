@@ -11,6 +11,17 @@ constructor(props) {
      
   }
 }
+
+// render() {
+   // return (
+     // <div>
+        
+      // <div>Welcome vishwas</div> 
+      // <div>Welcome Guest</div> 
+     // </div>
+   // )
+  //}
+
   // conditional rendering
   // 1 - if/else
 
@@ -27,29 +38,32 @@ constructor(props) {
     //}
 
     //2 - element variable
-    render(){
-    let message
-    if(this.state.isLoggedIn){
-        message = <div> Welcome Prakhar </div>
+    //multiline comment in javascript?
+   // render(){
+    // let message
+    // if(this.state.isLoggedIn){
+    //     message = <div> Welcome Prakhar </div>
 
-    }else{
-        message= <div> welcome guest </div>
-    }
-    return <div>{message}</div>
+    // }else{
+    //     message= <div> welcome guest </div>
+    // }
+    // return <div>{message}</div>
+    // }
+
+    // 3- conditional operator
+
+    render(){
+      return(
+        this.state.isLoggedIn? (
+          <div>Welcome Prakhar</div>
+        ):(<div>Welcome Guest</div>)
+      )
     }
 
  }
 
 
- // render() {
-   // return (
-     // <div>
-        
-      // <div>Welcome vishwas</div> 
-      // <div>Welcome Guest</div> 
-     // </div>
-   // )
-  //}
+ 
 
 
 export default UserGreetings
