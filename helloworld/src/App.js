@@ -6,11 +6,13 @@ import Hello from './components/Hello';
 import Message from './components/Message';
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
+import EventBind from './components/EventBind';
 
 class App extends Component {
   render(){
   return (
     <div className="App">
+      <EventBind></EventBind>
       <FunctionClick></FunctionClick>
       <Counter></Counter>
       <Greet name = "prakhar"/>
