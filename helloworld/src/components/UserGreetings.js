@@ -14,11 +14,11 @@ constructor(props) {
 
  render(){
     
-    if(this.atate.isLoggedIn){
+    if(this.state.isLoggedIn){
         return <div>Welcome prakhar</div>
     }
 
-    }Else{
+    else {
         return <div>welcome guest</div>
         
 
