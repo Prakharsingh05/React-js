@@ -7,22 +7,37 @@ constructor(props) {
   super(props)
 
   this.state = {
-    isLoggedIn: false
+    isLoggedIn: true
      
   }
 }
+  // conditional rendering
+  // 1 - if/else
 
- render(){
+ //render(){
     
-    if(this.state.isLoggedIn){
-        return <div>Welcome prakhar</div>
-    }
+   // if(this.state.isLoggedIn){
+       // return <div>Welcome prakhar</div>
+    //}
 
-    else {
-        return <div>welcome guest</div>
+    //else {
+      //  return <div>welcome guest</div>
         
 
+    //}
+
+    //2 - element variable
+    render(){
+    let message
+    if(this.state.isLoggedIn){
+        message = <div> Welcome Prakhar </div>
+
+    }else{
+        message= <div> welcome guest </div>
     }
+    return <div>{message}</div>
+    }
+
  }
 
 
@@ -35,6 +50,6 @@ constructor(props) {
      // </div>
    // )
   //}
-}
+
 
 export default UserGreetings
