@@ -24,7 +24,7 @@ class App extends Component {
       <Form/>
       <Inline></Inline>
       <StyleSheet primary ={false}></StyleSheet>
-      <NameList/>
+    
       <Counter1></Counter1>
       <UserGreetings/>
       <ParentComponent/>
