@@ -16,11 +16,13 @@ import Inline from './components/Inline';
 import Form from './components/Form';
 import LIfecycleA from './components/LIfecycleA';
 import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 class App extends Component {
   render(){
   return (
     <div className="App">
+      <Table/>
       <FragmentDemo/>
       <LIfecycleA/>
       <Form/>
