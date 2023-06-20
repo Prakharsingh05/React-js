@@ -12,11 +12,13 @@ import UserGreetings from './components/UserGreetings';
 import Counter1 from './components/Counter1';
 import NameList from './components/NameList';
 import StyleSheet from './components/StyleSheet';
+import Inline from './components/Inline';
 
 class App extends Component {
   render(){
   return (
     <div className="App">
+      <Inline></Inline>
       <StyleSheet primary ={false}></StyleSheet>
       <NameList/>
       <Counter1></Counter1>
