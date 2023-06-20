@@ -23,7 +23,15 @@ import React, { Component } from 'react'
     render(){
         console.log('LifecycleA render')
 
-        return <div>Lifecycle A</div>
+        return ( 
+            <div>
+            <div>Lifecycle A</div>
+            <lifecycleB/>
+
+            </div>
+
+
+        )
         
 
     }
