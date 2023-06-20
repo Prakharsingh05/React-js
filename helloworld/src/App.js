@@ -10,11 +10,15 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreetings from './components/UserGreetings';
 import Counter1 from './components/Counter1';
+import NameList from './components/NameList';
+import StyleSheet from './components/StyleSheet';
 
 class App extends Component {
   render(){
   return (
     <div className="App">
+      <StyleSheet primary ={false}></StyleSheet>
+      <NameList/>
       <Counter1></Counter1>
       <UserGreetings/>
       <ParentComponent/>
