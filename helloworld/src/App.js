@@ -13,11 +13,15 @@ import Counter1 from './components/Counter1';
 import NameList from './components/NameList';
 import StyleSheet from './components/StyleSheet';
 import Inline from './components/Inline';
+import Form from './components/Form';
+import LIfecycleA from './components/LIfecycleA';
 
 class App extends Component {
   render(){
   return (
     <div className="App">
+      <LIfecycleA/>
+      <Form/>
       <Inline></Inline>
       <StyleSheet primary ={false}></StyleSheet>
       <NameList/>
