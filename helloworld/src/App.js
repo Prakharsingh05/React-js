@@ -1,4 +1,4 @@
-import React,{Component} from 'react'
+import React,{Component, Fragment} from 'react'
 import './App.css';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome';
@@ -15,11 +15,13 @@ import StyleSheet from './components/StyleSheet';
 import Inline from './components/Inline';
 import Form from './components/Form';
 import LIfecycleA from './components/LIfecycleA';
+import FragmentDemo from './components/FragmentDemo';
 
 class App extends Component {
   render(){
   return (
     <div className="App">
+      <FragmentDemo/>
       <LIfecycleA/>
       <Form/>
       <Inline></Inline>
