@@ -17,11 +17,13 @@ import Form from './components/Form';
 import LIfecycleA from './components/LIfecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
+import Cleanup from './components/Cleanup';
 
 class App extends Component {
   render(){
   return (
     <div className="App">
+      <Cleanup/>
       <Table/>
       <FragmentDemo/>
       <LIfecycleA/>
