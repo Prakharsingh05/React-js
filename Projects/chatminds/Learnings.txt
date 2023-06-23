@@ -1,0 +1,3 @@
+
+
+.env - env files are also known as environment variables. An environment variable is a variable whose value is set outside the program, typically through a functionality built into the operating system or microservice
