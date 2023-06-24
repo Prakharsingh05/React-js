@@ -18,11 +18,13 @@ import LIfecycleA from './components/LIfecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 import Cleanup from './components/Cleanup';
+import ParentComp from './components/ParentComp';
 
 class App extends Component {
   render(){
   return (
     <div className="App">
+      <ParentComp/>
       <Cleanup/>
       <Table/>
       <FragmentDemo/>

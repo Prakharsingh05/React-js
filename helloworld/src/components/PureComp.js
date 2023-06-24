@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react'
 
-export class PureComp extends PureComponent {
+ class PureComp extends PureComponent {
   render() {
     return (
       <div>
+        pure components {this.props.name}
         
       </div>
     )
