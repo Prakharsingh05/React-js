@@ -20,11 +20,13 @@ import Table from './components/Table';
 import Cleanup from './components/Cleanup';
 import ParentComp from './components/ParentComp';
 import Refsdemo from './components/Refsdemo';
+import PortalDemo from './components/PortalDemo';
 
 class App extends Component {
   render(){
   return (
     <div className="App">
+      <PortalDemo/>
       <Refsdemo/>
       <ParentComp/>
       <Cleanup/>
