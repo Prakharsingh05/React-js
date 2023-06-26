@@ -19,11 +19,13 @@ import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 import Cleanup from './components/Cleanup';
 import ParentComp from './components/ParentComp';
+import Refsdemo from './components/Refsdemo';
 
 class App extends Component {
   render(){
   return (
     <div className="App">
+      <Refsdemo/>
       <ParentComp/>
       <Cleanup/>
       <Table/>

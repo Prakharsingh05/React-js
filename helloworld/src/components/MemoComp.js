@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MemoComp(name) {
+function MemoComp({name}) {
     console.log('rendering memo');
   return (
     <div>
@@ -9,4 +9,4 @@ function MemoComp(name) {
   )
 }
 
-export default React.memo(MemoComp);
+export default React.memo(MemoComp)
