@@ -21,11 +21,15 @@ import Cleanup from './components/Cleanup';
 import ParentComp from './components/ParentComp';
 import Refsdemo from './components/Refsdemo';
 import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
 
 class App extends Component {
   render(){
   return (
     <div className="App">
+      <Hero nameName = "batman" />
+      <Hero nameName = " superman" />
+      
       <PortalDemo/>
       <Refsdemo/>
       <ParentComp/>
