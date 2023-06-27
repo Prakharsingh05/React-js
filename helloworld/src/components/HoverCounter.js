@@ -8,16 +8,16 @@ import React, { Component } from 'react'
          count: 0
       }
     }
-    increment =()=>{
+    incrementCount =()=>{
         this.setState(prevState=>{
            return { count : prevState.count +1}
         })
     }
   render() {
-    const {count} =this.State
+    const {count} =this.state
     return (
       <div>
-        <button onMouseOver={this.increment}>Hovered {count} times</button>    
+        <button onMouseOver={this.incrementCount}>Hovered {count} times</button>    
       </div>
     )
   }
