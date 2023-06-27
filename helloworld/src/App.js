@@ -22,14 +22,16 @@ import ParentComp from './components/ParentComp';
 import Refsdemo from './components/Refsdemo';
 import PortalDemo from './components/PortalDemo';
 import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 
 class App extends Component {
   render(){
   return (
     <div className="App">
+      <ErrorBoundary/>
       <Hero heroName = "batman" />
       <Hero heroName = " superman" />
-      <Hero heroName="joker"/>
+       <Hero heroName="joker"/>
       
       <PortalDemo/>
       <Refsdemo/>
