@@ -27,8 +27,9 @@ class App extends Component {
   render(){
   return (
     <div className="App">
-      <Hero nameName = "batman" />
-      <Hero nameName = " superman" />
+      <Hero heroName = "batman" />
+      <Hero heroName = " superman" />
+      <Hero heroName="joker"/>
       
       <PortalDemo/>
       <Refsdemo/>
