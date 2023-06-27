@@ -28,10 +28,11 @@ class App extends Component {
   render(){
   return (
     <div className="App">
-      <ErrorBoundary/>
+      <ErrorBoundary>
       <Hero heroName = "batman" />
       <Hero heroName = " superman" />
        <Hero heroName="joker"/>
+      
       
       <PortalDemo/>
       <Refsdemo/>
@@ -54,6 +55,7 @@ class App extends Component {
       <Greet name = "batman"/>
       <Greet name = "bruceWayne"/>
       <Message/>
+      </ErrorBoundary>
 
       {/*<Welcome></Welcome>*/}
       {/* <Hello></Hello>*/}
