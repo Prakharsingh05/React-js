@@ -20,7 +20,7 @@ class ClassCounter extends Component {
     return (
       <div>
         <button onClick = {this.incrementcount}>Count {this.state.count}</button>
-
+       < h7> Class based using setState</h7>
       </div>
     )
   }
