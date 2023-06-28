@@ -6,3 +6,30 @@
 .heading {
   font-family: Poppins;
 }
+
+
+.grid-main {
+  display : grid;
+  grid-template-columns: auto auto;
+  gap:15px;
+}
+
+.grid-child{
+  border:2px soild whitesmoke;
+  border-radius: 15px;
+}
+.grid-child h3{
+
+  font-family : Poppins;
+  font-weight: 700 ;
+  
+
+}
+
+.grid-child p {
+
+  font-family : Poppins;
+  font-weight: 500 ;
+  font: size 15px;
+
+}

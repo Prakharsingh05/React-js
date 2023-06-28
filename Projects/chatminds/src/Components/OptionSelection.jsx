@@ -1,10 +1,23 @@
 import React from 'react';
 
-export default function OptionSelection() {
+export default function OptionSelection({arrayItems}) {
   return (
-    <div>
+    <>
+    
         <h1 className='heading'>React API app</h1>
-      
-    </div>
+
+        <div className="grid-main">
+          {arrayItems.map((item)=>{
+
+            return<div className='grid-child'>
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+            </div>
+
+          })}
+
+        </div>
+
+    </>
   )
 }

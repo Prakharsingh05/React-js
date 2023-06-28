@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <OptionSelection/>
+      <OptionSelection arrayItems={arrayItems}/>
       
     </div>
   );
