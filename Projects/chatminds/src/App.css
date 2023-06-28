@@ -12,12 +12,20 @@
   display : grid;
   grid-template-columns: auto auto;
   gap:15px;
+  margin-top: 40px;
 }
 
-.grid-child{
-  border:2px soild whitesmoke;
+.grid-child {
+  border:  2px solid whitesmoke;
   border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
 }
+.grid-child:hover{
+  background-color: blueviolet;
+  color: aliceblue;
+}
+
 .grid-child h3{
 
   font-family : Poppins;
