@@ -6,18 +6,21 @@ import Translation from './Components/Translation';
 
 function App() {
   const [option,setOption] = useState({});
-  const selectOption =(Option)=>{
-    console.log(Option);
+  const selectOption =(option)=>{
+    setOption(option);
   };
 
-  console.log(option)
+  console.log(Object.values(option).length);
 
 
 
   return (
     <div className="App">
+      {Object.values(option).length ===0 ?(
       <OptionSelection arrayItems={arrayItems} selectOption={selectOption}/>
+      ):(
       <Translation/>
+  )}
     </div>
   );
 }
