@@ -16,7 +16,9 @@ export default function OptionSelection({arrayItems , selectOption}) {
 
           })}
 
-        </div>
+        </div> 
+        
+      
 
     </>
   )
