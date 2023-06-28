@@ -4,11 +4,12 @@ import OptionSelection from './Components/OptionSelection';
 import {arrayItems} from "./AiOptions";
 
 function App() {
-  console.log(arrayItems);
+  const selectOption =(Option)=>{};
+
 
   return (
     <div className="App">
-      <OptionSelection arrayItems={arrayItems}/>
+      <OptionSelection arrayItems={arrayItems} selectOption={selectOption}/>
       
     </div>
   );
