@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export default function OptionSelection() {
   return (
     <div>
-        <h1>React API app</h1>
+        <h1 className='heading'>React API app</h1>
       
     </div>
   )
