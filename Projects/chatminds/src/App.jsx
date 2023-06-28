@@ -4,7 +4,9 @@ import OptionSelection from './Components/OptionSelection';
 import {arrayItems} from "./AiOptions";
 
 function App() {
-  const selectOption =(Option)=>{};
+  const selectOption =(Option)=>{
+    console.log(Option);
+  };
 
 
   return (
