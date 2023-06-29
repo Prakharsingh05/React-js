@@ -6,9 +6,16 @@ import Translation from './Components/Translation';
 
 function App() {
   const [option,setOption] = useState({});
+  const [input,setInput] = useState("");
   const selectOption =(option)=>{
     setOption(option);
   };
+
+
+  const sendToAI = () =>{
+    setOption({...option , promt: input});
+
+  }
 
   console.log(Object.values(option).length);
 
@@ -19,7 +26,7 @@ function App() {
       {Object.values(option).length ===0 ?(
       <OptionSelection arrayItems={arrayItems} selectOption={selectOption}/>
       ):(
-      <Translation/>
+      <Translation send={sendToAI} setInput={setInput}/>
   )}
     </div>
   );

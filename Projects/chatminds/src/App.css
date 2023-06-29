@@ -47,3 +47,17 @@
   padding:10px;
   font-family: Poppins;
 }
+
+.btn-success{
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn-danger{
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+
+}
