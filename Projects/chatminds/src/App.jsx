@@ -7,7 +7,7 @@ import Translation from './Components/Translation';
 
 function App() {
   const configuration = new Configuration({
-    apiKey: import.meta.env.VITE_Open_AI_Key,
+    apiKey: import.meta.env.VITE_Open_AI_key,
   });
   
   const openai =new OpenAIApi(configuration);
@@ -36,7 +36,7 @@ function App() {
       {Object.values(option).length ===0 ?(
       <OptionSelection arrayItems={arrayItems} selectOption={selectOption}/>
       ):(
-      <Translation send={sendToAI} setInput={setInput} result={result}/>
+      <Translation sendToAI={sendToAI} setInput={setInput} result={result}/>
   )}
     </div>
   );
