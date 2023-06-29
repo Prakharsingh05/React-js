@@ -12,16 +12,18 @@ function App() {
   
   const openai =new OpenAIApi(configuration);
   const [option,setOption] = useState({});
+  const[result , setResult] =useState("");
   const [input,setInput] = useState("");
   const selectOption =(option)=>{
     setOption(option);
   };
 
 
-  const sendToAI = () =>{
+  const sendToAI = async () =>{
     
-    let object = {...option , promt: input};
-    console.log(object)
+    let object = {...option , prompt: input};
+    const response = await openai.createCompletion(object);
+    setResult(response.data.choices[0].text);
 
   }
 
@@ -34,7 +36,7 @@ function App() {
       {Object.values(option).length ===0 ?(
       <OptionSelection arrayItems={arrayItems} selectOption={selectOption}/>
       ):(
-      <Translation send={sendToAI} setInput={setInput}/>
+      <Translation send={sendToAI} setInput={setInput} result={result}/>
   )}
     </div>
   );
