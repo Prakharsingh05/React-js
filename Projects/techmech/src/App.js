@@ -6,17 +6,21 @@ import "./styles/App.scss";
 
 function App() {
   return (
+    <div>
     
-      <Router >
-        <Header/>
-          <Routes>
-            <Route/>
+    <Header/>
+    </div>
+    
+      // <Router >
+      //   <Header/>
+      //     <Routes>
+      //       <Route/>
 
            
-          </Routes>
+      //     </Routes>
 
 
-      </Router>
+      // </Router>
      
    
   );
