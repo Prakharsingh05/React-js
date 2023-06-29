@@ -28,7 +28,7 @@ function App() {
 
   }
 
-  console.log(Object.values(option).length);
+ 
 
 
 
