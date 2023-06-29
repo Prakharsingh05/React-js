@@ -1,13 +1,14 @@
 import React from 'react'
 
-export default function Translation() {
+export default function Translation(sendToAI) {
   return (
-    <div>
-      <textarea className="text-area" cols={55} rows={10}>
+    <div className='container col-6'>
+      <textarea className="text-area" cols={55} rows={10} onChange={(e)=>setInput(e.target.value)}>
 
       </textarea>
     <br/>
-      <button type="button" class="btn btn-success">Send to AI</button>
+      <button onClick ={sendToAI} type="button" className="btn btn-success col-6 ">Send to AI</button>
+      <button type="button" className="btn btn-danger col-4">Reset</button>
     </div>
   )
 }
