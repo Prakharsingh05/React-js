@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import{ Configuration, OpenAIApi } from 'openai';
+
 import './App.css';
+import{ Configuration, OpenAIApi } from 'openai';
 import OptionSelection from './Components/OptionSelection';
 import {arrayItems} from "./AiOptions";
 import Translation from './Components/Translation';
