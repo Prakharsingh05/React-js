@@ -1,4 +1,4 @@
-import {createContext, useState} from "react";
+import {createContext, useLayoutEffect, useState} from "react";
 
 // create context object
 
@@ -13,18 +13,27 @@ export const CryptoProvider=({children})=>{
         const getCryptoData = async () =>{
 
             try{
-                const data =await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false&locale=en`)
+                const data =await fetch
+                (`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false&locale=en`
+                ).then(res => res.json()).then(json=>json);
 
+                console.log(data)
+                setCryptoData(data);
 
             }catch(error){
                 console.log("Error getting crypto data", error);
             }
 
-        } 
+        } ;
+        
+        useLayoutEffect(() => {
+            getCryptoData();
+            
+        }, [])
 
     return(
 
-        <CryptoContext.Provider value={{}}>
+        <CryptoContext.Provider value={{cryptoData}}>
 
         {children}
         </CryptoContext.Provider>
