@@ -2,9 +2,12 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Logo from '../components/Logo'
 import Navigation from '../components/Navigation'
+import { CryptoProvider } from '../context/CryptoContext'
 
 const Home = () => {
   return (
+
+    <CryptoProvider>
     <main className="w-full h-200 flex flex-col first-letter:first-line:
     content-center items-center relative text-white font-nunito
     ">
@@ -13,6 +16,7 @@ const Home = () => {
       <Navigation/>
       <Outlet/>
     </main>
+    </CryptoProvider>
   )
 }
 
