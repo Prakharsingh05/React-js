@@ -9,6 +9,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './pages/Home';
+import Trending from './pages/Trending';
+import Saved from './pages/Saved';
+import Crypto from './pages/Crypto';
 
 
 const router = createBrowserRouter([
@@ -18,15 +21,15 @@ const router = createBrowserRouter([
     children:[
       {
       path:"/",
-      element:<crypto/>
+      element:<Crypto/>
       },
       {
         path:"/trending",
-        element:<crypto/>
+        element:<Trending/>
       },
       {
           path:"/saved",
-          element:<crypto/>
+          element:<Saved/>
       }
 
     ]
