@@ -18,7 +18,7 @@ green: "#25da72",
     },
 
 
-    fontSize:{
+    fontSize: {
       sm: "14px", md: "18px", lg: "24px", xl: "32px", base: "16px"
     }
 
