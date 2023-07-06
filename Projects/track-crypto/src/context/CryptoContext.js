@@ -8,13 +8,13 @@ export const CryptoContext = createContext({});
 
 export const CryptoProvider=({children})=>{
                 
-            const [first , setfirst] = useState("this is test state");
+            const [test , setTest] = useState("this is test state");
 
     return(
 
         <CryptoContext.Provider value={{test}}>
 
-
+        {children}
         </CryptoContext.Provider>
     )
 

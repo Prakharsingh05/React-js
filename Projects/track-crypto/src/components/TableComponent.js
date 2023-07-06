@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CryptoContext } from '../context/CryptoContext'
 
 const TableComponent = () => {
 
-    const first
+    const {test} = useContext(CryptoContext)
   return (
     <div 
     className="flex flex-col mt-9 border border-gray-100 rounded">
