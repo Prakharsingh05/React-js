@@ -27,7 +27,7 @@ export const CryptoProvider=({children})=>{
         } ;
         
         useLayoutEffect(() => {
-            getCryptoData();
+          
             
         }, [])
 
