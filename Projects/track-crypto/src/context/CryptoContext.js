@@ -22,7 +22,7 @@ export const CryptoProvider=({children})=>{
 
             }
             catch(error){
-                console.log("Error getting crypto data");
+                console.log(error);
             }
 
         } ;
