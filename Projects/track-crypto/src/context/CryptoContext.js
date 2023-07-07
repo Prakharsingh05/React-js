@@ -10,7 +10,7 @@ export const CryptoContext = createContext({});
 export const CryptoProvider=({children})=>{
 
      const {cryptoData , setCryptoData} = useState();
-     
+     a\
                 
         const getCryptoData = async () =>{
 
