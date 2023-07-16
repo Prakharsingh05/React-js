@@ -1,4 +1,4 @@
-import {createContext, useLayoutEffect, useState} from "react";
+import {createContext,  useState} from "react";
 
 // create context object
 
@@ -16,7 +16,7 @@ export const CryptoProvider=({children})=>{
 
     return(
 
-        <CryptoContext.Provider value={{cryptoData}}>
+        <CryptoContext.Provider value={{test}}>
 
         {children}
         </CryptoContext.Provider>
