@@ -9,7 +9,7 @@ export const CryptoContext = createContext({});
 
 export const CryptoProvider=({children})=>{
 
-     const {test , setTest} = useState("this is a test state");
+     const [test , setTest] = useState("this is a test state");
 
                 
         
