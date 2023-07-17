@@ -3,9 +3,6 @@ import { CryptoContext } from '../context/CryptoContext';
 
 const TableComponent = () => {
 
-    let {test} = useContext(CryptoContext);
-
-    console.log(test);
 
 
   return (
