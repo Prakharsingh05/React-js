@@ -3,15 +3,16 @@ import { CryptoContext } from '../context/CryptoContext';
 
 const TableComponent = () => {
 
+  let {cryptoData} = useContext(CryptoContext);
+
 
 
   return (
     <div 
     className="flex flex-col mt-9 border border-gray-100 rounded">
 
-       
-      
-      <table className="w-full table-auto  ">
+      {
+        cryptoData ? <table className="w-full table-auto  ">
 
         <thead className="capitalize text-base text-gray-100 
         font-medium border-b border-gray-100
@@ -43,7 +44,12 @@ const TableComponent = () => {
             </tr>
             
         </tbody>
-      </table>
+      </table> : null
+      }
+
+       
+      
+      
     </div>
   )
 }
