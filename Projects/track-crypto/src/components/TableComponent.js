@@ -35,11 +35,10 @@ const TableComponent = () => {
             return(<tr key = {data.id}className="text-center text-base border-b border-gray-100 hover:bg-gray-200 
             last:border-b-0
             ">
+                    <td className="py-4"></td>
                     <td className="py-4">{data.name}</td>
-                    <td className="py-4">Price</td>
                     <td className="py-4">Total volume</td>
                     <td className="py-4">Market cap change</td>
-                    <td className="py-4">Asset</td>
                     <td className="py-4">1 Hour</td>
                     <td className="py-4">24 Hour</td>
                     <td className="py-4">7 Days</td>
