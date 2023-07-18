@@ -57,12 +57,17 @@ const TableComponent = () => {
 
                     </td>
                     <td className="py-4">{data.name}</td>
-                    <td className="py-4">{data.current_price}</td>
+                    <td className="py-4">{
+                      new Intl.NumberFormat("en-IN",{
+                        style:"currency",
+                        currency:"INR"
+                      }).format(data.current_price)
+                    }</td>
                     <td className="py-4">{data.total_volume}</td>
-                    <td className="py-4">{data.market_cap_change_percentage_24h}</td>
-                    <td className="py-4">{Number(data.price_change_percentage_1h_in_currency).toFixed(2)}</td>
-                    <td className="py-4">{Number(data.price_change_percentage_24h).toFixed(2)}</td>
-                    <td className="py-4">{Number(data.price_change_percentage_7d_in_currency).toFixed(2)}</td>
+                    <td className="py-4">{data.market_cap_change_percentage_24h}%</td>
+                    <td className={data.price_change_percentage_1h_in_currency > 0? " text-green py-4" : "text-red py-4"}>{Number(data.price_change_percentage_1h_in_currency).toFixed(2)}</td>
+                    <td className={data.price_change_percentage_24h> 0? " text-green py-4" : "text-red py-4"}>{Number(data.price_change_percentage_24h).toFixed(2)}</td>
+                    <td className={data.price_change_percentage_7d_in_currency > 0? " text-green py-4" : "text-red py-4"}>{Number(data.price_change_percentage_7d_in_currency).toFixed(2)}</td>
                 </tr>
                 )
           })
