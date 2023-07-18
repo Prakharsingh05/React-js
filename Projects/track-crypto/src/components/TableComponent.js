@@ -14,7 +14,7 @@ const TableComponent = () => {
       {
         cryptoData ? <table className="w-full table-auto  ">
 
-        <thead className="capitalize text-base text-gray-100 
+        <thead className=" capitalize text-base text-gray-100 
         font-medium border-b border-gray-100
         
         ">

@@ -18,10 +18,10 @@ function Search() {
         />
 
         <button type='submit'
-        className='absolute right-1'
+        className='absolute right-1 cursor-pointer'
         >
 
-        <img src ={searchIcon}  alt="search"/>
+        <img src ={searchIcon} className='w-full h-auto' alt="search"/>
          </button>
       
     </form>
