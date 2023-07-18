@@ -1,5 +1,7 @@
 import React from 'react'
 import Search from './Search'
+import Currency from './Currency'
+import Sorting from './Sorting'
 
 function Filters() {
   return (
@@ -8,8 +10,8 @@ function Filters() {
     flex items-center justify-between relative 
     ">
         <Search/>
-        <div>Currency</div>
-        <div>sorting</div>
+        <Currency/>
+        <Sorting/>
     
     </div>
   )
