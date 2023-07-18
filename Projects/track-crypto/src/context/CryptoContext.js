@@ -13,7 +13,7 @@ export const CryptoProvider=({children})=>{
 
         const getcryptoData = async()=>{
             try{
-                const data = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false&locale=en`).then(res=>res.json()).then(json=>json);
+                const data = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=10&page=1&sparkline=false&price_change_percentage=1h%2C24%2C7d&locale=en`).then(res=>res.json()).then(json=>json);
                 console.log(data);
                 setCryptoData(data);
                 
