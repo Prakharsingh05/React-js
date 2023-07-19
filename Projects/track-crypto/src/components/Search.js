@@ -11,7 +11,10 @@ function Search() {
     let query = e.target.value;
     setSearchText(query);
   }
+
+
   return (
+    <>
     <form className='w-96  absolute top-2 right-1 flex items-center  
     
     ml-7 font-nunito
@@ -19,8 +22,9 @@ function Search() {
     '>
         <input type='text' nama="search"
         onChange={handleInput}
+        value={seacrhText}
         className='w-full rounded bg-gray-200
-           placeholder: text-gray-100 pl-2
+           placeholder: text-white pl-2
            required outline-0 border border-transparent 
            focus:border-cyan '
 
@@ -35,6 +39,26 @@ function Search() {
          </button>
       
     </form>
+
+    {
+      seacrhText.length>0 ?
+
+      <ul>
+        <li>bitcoin</li>
+        <li>ethereum</li>
+        <li>dogecoin</li>
+        <li>bob</li>
+
+      </ul>
+
+      :
+
+      null
+
+    }
+    
+    
+    </>
   )
 }
 
