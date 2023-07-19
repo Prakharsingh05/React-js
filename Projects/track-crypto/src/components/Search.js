@@ -7,12 +7,12 @@ function Search() {
   const [seacrhText, setSearchText] = useState("");
 
   let handleInput = (e) =>{
-    e.preventDefayult();
+    e.preventDefault();
     let query = e.target.value;
-    console.log(query);
+    setSearchText(query);
   }
   return (
-    <form className='w-96  relative flex items-center
+    <form className='w-96  absolute top-2 right-1 flex items-center  
     
     ml-7 font-nunito
 
