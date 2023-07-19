@@ -49,6 +49,7 @@ function Search() {
         <li>dogecoin</li>
         <li>bob</li>
         <li>bob</li>
+        <li>bob</li>
 
       </ul>
 
