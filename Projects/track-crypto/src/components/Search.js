@@ -54,6 +54,7 @@ function Search() {
         <li>bob</li>
         <li>bob</li>
         <li>bob</li>
+        seacrh result
 
       </ul>
 
