@@ -12,7 +12,7 @@ function Search() {
     console.log(query);
   }
   return (
-    <form className='w-96 left-12 relative flex items-center
+    <form className='w-96  relative flex items-center
     
     ml-7 font-nunito
 
