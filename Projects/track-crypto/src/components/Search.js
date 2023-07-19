@@ -48,6 +48,7 @@ function Search() {
         <li>ethereum</li>
         <li>dogecoin</li>
         <li>bob</li>
+        <li>bob</li>
 
       </ul>
 
