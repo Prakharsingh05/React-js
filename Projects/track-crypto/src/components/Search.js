@@ -1,5 +1,6 @@
 import React from 'react'
 import searchIcon from "../assets/search-icon.svg";
+import { useState } from 'react';
 
 function Search() {
 
@@ -11,7 +12,7 @@ function Search() {
     console.log(query);
   }
   return (
-    <form className='w-96  relative flex items-center
+    <form className='w-96 left-12 relative flex items-center
     
     ml-7 font-nunito
 
@@ -21,7 +22,7 @@ function Search() {
         className='w-full rounded bg-gray-200
            placeholder: text-gray-100 pl-2
            required outline-0 border border-transparent 
-           focus:border-cyan  '
+           focus:border-cyan '
 
         placeholder="search here.."
         />
