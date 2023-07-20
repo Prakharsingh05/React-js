@@ -43,7 +43,7 @@ export const CryptoProvider=({children})=>{
 
     return(
 
-        <CryptoContext.Provider value={{cryptoData , seacrhData}}>
+        <CryptoContext.Provider value={{cryptoData , seacrhData , getSearchResult}}>
 
         {children}
         </CryptoContext.Provider>
