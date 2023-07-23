@@ -4,9 +4,9 @@ import searchIcon from "../assets/search-icon.svg";
 import { useState } from "react";
 import { CryptoContext } from "../context/CryptoContext";
 
-const SearcInput = ({handleSearch}) => {
+const SearcInput = ({ handleSearch }) => {
   const [seacrhText, setSearchText] = useState("");
-  let{searchData} = useContext(CryptoContext);
+  let { searchData } = useContext(CryptoContext);
   let handleInput = (e) => {
     e.preventDefault();
     let query = e.target.value;
@@ -41,11 +41,15 @@ const SearcInput = ({handleSearch}) => {
       </form>
 
       {seacrhText.length > 0 ? (
-        <ul className="absolute top-11 right-0 w-full h-96 rounded overflow-x-hidden py-2 bg-gray-200 bg-opacity-60 backdrop-blur-md ">
-          {searchData? 
-          searchData.map(coin => {return <li>{coin.id}</li>})
-
-          : <h2> Loading . . .</h2>}
+        <ul className="absolute top-11 right-0 w-96 h-96 rounded overflow-x-hidden py-2 bg-gray-200 bg-opacity-60 backdrop-blur-md ">
+          {searchData ? 
+            searchData.map(coins => { return <li>
+                  <img className="w-[1rem] h-[1rem] mx-1.5" src={coins.thumb} alt={coins.name} />
+                  <span>{coins.name}</span>
+                </li> })
+           : 
+            <h2> Loading . . .</h2>
+          }
         </ul>
       ) : null}
     </>
