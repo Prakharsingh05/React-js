@@ -4,7 +4,7 @@ import searchIcon from "../assets/search-icon.svg";
 import { useState } from "react";
 import { CryptoContext } from "../context/CryptoContext";
 
-const SearcInput = (handleSearch) => {
+const SearcInput = ({handleSearch}) => {
   const [seacrhText, setSearchText] = useState("");
   let handleInput = (e) => {
     e.preventDefault();
