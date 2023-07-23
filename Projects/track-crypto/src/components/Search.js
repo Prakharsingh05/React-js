@@ -1,6 +1,6 @@
+import debounce from "lodash.debounce";
 import React, { useContext } from "react";
 import searchIcon from "../assets/search-icon.svg";
-import debounce from "lodash.debounce";
 import { useState } from "react";
 import { CryptoContext } from "../context/CryptoContext";
 
