@@ -3,7 +3,7 @@ import searchIcon from "../assets/search-icon.svg";
 import { useState } from 'react';
 import { CryptoContext } from '../context/CryptoContext';
 
-function Search() {
+const Search=()=> {
 
   const [seacrhText, setSearchText] = useState("");
   let {getSearchResult}=useContext(CryptoContext);
