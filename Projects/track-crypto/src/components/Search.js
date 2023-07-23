@@ -6,6 +6,7 @@ import { CryptoContext } from "../context/CryptoContext";
 
 const SearcInput = ({handleSearch}) => {
   const [seacrhText, setSearchText] = useState("");
+  let{searchData} = useContext(CryptoContext);
   let handleInput = (e) => {
     e.preventDefault();
     let query = e.target.value;
@@ -41,17 +42,10 @@ const SearcInput = ({handleSearch}) => {
 
       {seacrhText.length > 0 ? (
         <ul className="absolute top-11 right-0 w-full h-96 rounded overflow-x-hidden py-2 bg-gray-200 bg-opacity-60 backdrop-blur-md ">
-          <li>bitcoin</li>
-          <li>ethereum</li>
-          <li>dogecoin</li>
-          <li>bob</li>
-          <li>bob</li>
-          <li>bob</li>
-          <li>bob</li>
-          <li>bob</li>
-          <li>bob</li>
-          <li>bob</li>
-          seacrh result
+          {searchData? 
+          searchData.map(coin => {return <li>{coin.id}</li>})
+
+          : <h2> Loading . . .</h2>}
         </ul>
       ) : null}
     </>
