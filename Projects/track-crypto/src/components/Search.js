@@ -3,29 +3,23 @@ import searchIcon from "../assets/search-icon.svg";
 import debounce from 'lodash.debounce';
 import { useState } from 'react';
 import { CryptoContext } from '../context/CryptoContext';
-const SearcInpu
 
-const Search=()=> {
 
+const SearcInput =()=>{
   const [seacrhText, setSearchText] = useState("");
-  let {getSearchResult}=useContext(CryptoContext);
-
-  const debounceFunc = debounce(function(val){
-    getSearchResult(val);
-  },2000)
-
-  let handleInput = (e) =>{
-    e.preventDefault();
-    let query = e.target.value;
-    setSearchText(query);
-    debounceFunc(query);
-  }
-
-  
+    let handleInput = (e) =>{
+      e.preventDefault();
+      let query = e.target.value;
+      setSearchText(query);
+      debounceFunc(query);
+    }
 
 
-  return (
+  return(
     <>
+
+    
+    
     <form className='w-96  absolute top-2 right-1 flex items-center  
     
     ml-7 font-nunito
@@ -73,6 +67,28 @@ const Search=()=> {
       null
 
     }
+    </>
+  )
+}
+
+const Search=()=> {
+
+  
+  let {getSearchResult}=useContext(CryptoContext);
+
+  const debounceFunc = debounce(function(val){
+    getSearchResult(val);
+  },2000)
+
+  
+
+  
+
+
+  return (
+    <>
+   
+   <SearcInput/>
     
     
     </>
