@@ -10,7 +10,7 @@ export const CryptoContext = createContext({});
 export const CryptoProvider=({children})=>{
 
     const [cryptoData , setCryptoData] = useState();   
-    const [seacrhData , setSearchData] = useState();   
+    const [searchData , setSearchData] = useState();   
 
         const getcryptoData = async()=>{
             try{
@@ -43,7 +43,7 @@ export const CryptoProvider=({children})=>{
 
     return(
 
-        <CryptoContext.Provider value={{cryptoData , seacrhData , getSearchResult}}>
+        <CryptoContext.Provider value={{cryptoData , searchData , getSearchResult}}>
 
         {children}
         </CryptoContext.Provider>
