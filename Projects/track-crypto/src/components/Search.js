@@ -44,7 +44,7 @@ const SearcInput = ({ handleSearch }) => {
         <ul className="absolute top-11 right-0 w-96 h-96 rounded overflow-x-hidden py-2 bg-gray-200 bg-opacity-60 backdrop-blur-md ">
           {searchData ? 
             searchData.map(coins => { return <li>
-                  {/* <img className="w-[1rem] h-[1rem] mx-1.5" src={coins.thumb} alt={coins.name} /> */}
+                  <img className="w-[1rem] h-[1rem] mx-1.5" src={coins.thumb} alt={coins.name} />
                   <span>{coins.name}</span>
                 </li> })
            : 
