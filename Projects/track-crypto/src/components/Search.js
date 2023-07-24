@@ -6,13 +6,18 @@ import { CryptoContext } from "../context/CryptoContext";
 
 const SearcInput = ({ handleSearch }) => {
   const [seacrhText, setSearchText] = useState("");
-  let { searchData } = useContext(CryptoContext);
+  let { searchData , setCoinSearch } = useContext(CryptoContext);
   let handleInput = (e) => {
     e.preventDefault();
     let query = e.target.value;
     setSearchText(query);
     handleSearch(query);
   };
+
+  const selectCoin = (coin)=>{
+    setCoinSearch(coin)
+
+  }
 
   return (
     <>
